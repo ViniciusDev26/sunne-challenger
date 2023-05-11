@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Controller } from "../core/Controller";
+import { Controller } from "../../../shared/core/Controller";
 
 export function expressRouteAdapter(controller: Controller) {
   return async (req: Request, res: Response) => {

@@ -1,5 +1,5 @@
 import { Controller } from "../core/Controller";
-import { ListClientsService } from "../services/ListClientsService";
+import { ListClientsService } from "../modules/clients/services/ListClientsService";
 
 interface ListClientsControllerRequest {
   total: string
