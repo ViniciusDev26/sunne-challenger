@@ -15,7 +15,8 @@ export class ListClientsController implements Controller<ListClientsControllerRe
   ){}
   
   async handle(req: ListClientsControllerRequestDTO): Promise<ListClientsControllerResponse> {
-    const response = await this.listClientsService.execute(parseInt(req.total) ?? 20)
+    const total = parseInt(req.total)
+    const response = await this.listClientsService.execute(total || 20)
 
     return response
   }
