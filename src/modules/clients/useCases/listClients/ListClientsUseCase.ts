@@ -1,4 +1,4 @@
-import { FakerAPIProvider } from "../../../shared/providers/FakerAPI";
+import { FakerAPIProvider } from "@shared/providers/FakerAPI";
 
 export class ListClientsService {
   constructor(

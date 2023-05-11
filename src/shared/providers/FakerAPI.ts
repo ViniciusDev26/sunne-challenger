@@ -1,7 +1,7 @@
 import axios from "axios";
 
-import { Company } from "../models/Company";
-import { Person } from "../models/Person";
+import { Company } from "@shared/models/Company";
+import { Person } from "@shared/models/Person";
 
 export class FakerAPIProvider {
   async listCompanies(quantity: number) {
